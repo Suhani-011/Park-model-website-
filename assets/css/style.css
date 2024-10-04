@@ -82,7 +82,7 @@
     color: white;
 }
 #home-pg{
-    background:url('/assets/images/home.png') no-repeat center center;
+    background:url('../images/home.png') no-repeat center center;
     height: 100vh;
     background-size: cover;
 }
@@ -351,7 +351,7 @@
 #amenities::after{
     content: '';
     position: absolute;
-    background: url('/assets/images/chai.png') no-repeat center center;
+    background: url('../images/chai.png') no-repeat center center;
     background-size:cover;
     top: 25%;
     width:300px;
@@ -391,7 +391,7 @@
     padding: 0px 60px     ;
 }
 .vid-sec{
-    background: url('/assets/images/video.jpg')no-repeat center center;
+    background: url('../images/video.jpg')no-repeat center center;
     background-size: cover;
     position:relative;
     padding: 130px 0px;
@@ -431,7 +431,7 @@
 #review::after{
     content: '';
     position: absolute;
-    background: url('/assets/images/kettle.png') no-repeat center center;
+    background: url('../images/kettle.png') no-repeat center center;
     background-size:cover;
     top: -5%;
     width:250px;
