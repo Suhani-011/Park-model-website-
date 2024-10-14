@@ -175,7 +175,8 @@
 }
 .banner{
     position: relative;
-    padding-top: 100px;
+    padding-top: 200px;
+    padding-left: 100px;
 }
 .banner::before{
     content: url('../images/mouse.png');
@@ -507,4 +508,49 @@
 }
 .foot-icons li i:hover{
     color: var(--color-primary);
+}
+aside{
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color:#020201;
+    z-index: 100;
+    padding: 20px 30px;
+    display: none;
+}
+.close{
+    color:#D1B06B;
+    font-size: 25px;
+    cursor: pointer;
+}
+.menus-banner .li-banner{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--font-outfit);
+    line-height: 2.4;
+    transition: all 0.4s linear;
+    position:relative;
+    cursor: pointer;
+    color: white;
+}
+.menus-banner{
+    margin-top: 50px;
+}
+.display-block{
+    display: block;
+}
+.blur{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    background-color:rgba(15, 13, 13, 0.928);
+    z-index: 5;
+}
+.blur-banner{
+    visibility: visible;
+    opacity: 0.4;
 }

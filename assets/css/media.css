@@ -80,6 +80,9 @@
     .menus,.banner::before,.header-div .head-btn{
         display:none;
     }
+    /* aside{
+        display: block;
+    } */
     .about-us-img-2{
         top: 40%;
         right:-5%;

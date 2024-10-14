@@ -16,6 +16,8 @@
 </head>
 
 <body>
+
+    <div class="blur"></div>
     <!-- Header -->
     <header id="header">
         <div class="container plr-20">
@@ -26,7 +28,7 @@
                 </div>
                 <nav>
                     <ul class="menus flex justify-space">
-                        <li class="list list-gold">Home</li>
+                        <li class="list ">Home</li>
                         <li class="list">About Us</li>
                         <li class="list">Gallery</li>
                         <li class="list">Amenities</li>
@@ -40,7 +42,29 @@
                 </div>
                 <div class="menu-icon"><i class="ri-menu-fill"></i></div>
             </div>
+        
         </div>
+        <aside>
+            <div class="flex align-center justify-space">
+                    <div class="logo flex-column">
+                        <span class="gold">THE</span>
+                        <span class="white">PARK INFINITY
+                    </div>
+                    <span class="close"><i class="ri-close-circle-fill"></i></span>
+            </div> 
+            <div class="justify-center flex">
+                <nav>
+                    <ul class="menus-banner flex justify-space flex-column">
+                        <li class="li-banner">Home</li>
+                        <li class="li-banner">About Us</li>
+                        <li class="li-banner">Gallery</li>
+                        <li class="li-banner">Amenities</li>
+                        <li class="li-banner">Contact Us</li>
+                    </ul>
+                </nav>
+            </div>
+
+        </aside>
         <div class="head-line"></div>
     </header>
     <main>
@@ -113,7 +137,7 @@
                 <div class="room-type justify-center flex">
                     <ul class="flex gap-50 menus room-type">
                         <li class="list">Standard</li>
-                        <li class="list ">Deluxe</li>
+                        <li class="list">Deluxe</li>
                         <li class="list">Super Deluxe</li>
                         <li class="list">Exclusive Rooms</li>
                     </ul>
@@ -512,6 +536,21 @@
     
             </div>
     </footer>
+
+    <!-- jQuery -->
+     <script src="./assets/javascript/jQuery.js"></script>
+     <script>
+        $(document).ready(function(){
+            $(".menu-icon").on("click",function(){
+                $("aside").addClass("display-block");
+                $(".blur").addClass("blur-banner");
+            })
+            $(".close").on("click",function(){
+                $("aside").removeClass("display-block");
+                $(".blur").removeClass("blur-banner");
+            })
+        })
+     </script>
 
 </body>
 
